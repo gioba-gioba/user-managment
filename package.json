@@ -1,0 +1,29 @@
+{
+  "name": "user-management",
+  "version": "1.0.0",
+  "description": "MONGO_URL=mongodb://localhost:27017/users node index.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "eslint  --fix"
+    ]
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^6.1.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.5.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.4",
+    "prettier": "^2.5.1"
+  }
+}
